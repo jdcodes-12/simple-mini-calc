@@ -8,4 +8,4 @@
 
 
 ## *About This Project*
-> This project was created to use at APSU coding camps (June 2022) for the web development course. Original author @Johnny Dickson.
+> This project was created to use at APSU coding camps (June 2022) for the web development course. Original author @jdcodes-12.

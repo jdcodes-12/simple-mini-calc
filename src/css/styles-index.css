@@ -25,10 +25,13 @@ body {
     width: 500px;
     height: 500px;
     background-color: var(--primary);
+    border: 5px dashed var(--black);
+    box-shadow: -2px 20px 25px lightslategrey;
 }
 
 #calc-display {
     background-color: var(--accent);
+    border: 1px solid var(--accent);
 }
 
 #calc-btnpad {
@@ -39,8 +42,6 @@ body {
     width: 20%;
     justify-content: flex-end;
 }
-
-
 
 /* ----- Theme Kit ----- */
 
@@ -67,10 +68,15 @@ body {
 
 /* Buttons */
 .btn {
-    width: 25px;
+    width: 35px;
     height: 25px;
     background-color: var(--secondary);
     color: var(--light);
+    border: 1px solid var(--secondary);
+    border-radius: 3.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -109,12 +115,12 @@ body {
 .flex-stretch {
     justify-content: stretch;
 }
-/* ----- Typography Utilities -----*/
+/* ----- Typography Utilities ----- */
 .text-center {
     text-align: center;
 }
 
-/* ----- Border Utiltiies - For Debugging ----- */
+/* ----- Border Utiltiies ---- */
 .b1 {
     border: 1px solid black;
 }
@@ -125,6 +131,10 @@ body {
 
 .b3 {
     border: 1px solid orange;
+}
+
+.round {
+    border-radius: 25px;
 }
 
 /* ----- Spacing Utiltiies ----- */

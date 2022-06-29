@@ -1,0 +1,17 @@
+*::before,
+*::after, 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Link Unstyling */
+a {
+    text-decoration: none;
+}
+
+ul li,
+ol li{
+    list-style-type: none;
+}

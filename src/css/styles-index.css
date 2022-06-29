@@ -1,0 +1,56 @@
+/* Global Styles */
+:root {
+    --background: #F0EBE3; 
+    --primary: #576F72;
+    --secondary: #7D9D9C;
+    --accent: #E4DCCF;
+    --font-display: 'Play', monospace;
+    --font-body: 'Noto'
+}
+
+body {
+    font-family: 'Play', monospace;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1;
+    background-color: var(--bg-light);
+}
+
+/* Container Utilties */
+.container-flex {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+}
+
+/* Flex Utilities */
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.flex-stretch {
+    justify-content: stretch;
+}
+
+/* Border Utiltiies - For Debugging */
+.b1 {
+    border: 1px solid black;
+}
+
+.b2 {
+    border: 1px solid purple;
+}
+
+.b3 {
+    border: 1px solid orange;
+}

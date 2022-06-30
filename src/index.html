@@ -17,72 +17,87 @@
 </head>
 
 <body>
-  <!-- Links Go Here-->
-  <header class="container-fluid flex flex-center py-5">
-    <div class="container flex flex-center">
-      <h1>"The <span class="primary">Digit</span> Cruncher"</h1>
-    </div>
+  <header class="row flex-center">
+    <h1 class="container row flex-center">The Digit Cruncher</h1>
   </header>
 
-  <!-- Links Go Here-->
-  <main class="container-fluid flex flex-center row">
-    <section class="container flex flex-center row p-5">
-      <!-- Calc Container -->
-      <div id="calc-body" class="flex col flex-stretch">
-        <!-- Calc Body -->
-        <div>
-          <!-- Display Window-->
-          <section id="calc-header" class="container-fluid flex row flex-center">
-            <div id="calc-display" class="round container my-5 py-5 flex row flex-center">Window Display Div</div>
+  <main>
+    <div class="row flex-center">
+      <div class="container row flex-center">
+
+        <!-- Calc Container - Background -->
+        <section id="calc-container">
+
+          <!-- Window Display -->
+          <section id="calc-header" class="row flex-center">
+              <div class="container row flex-center">
+                Window 
+              </div>
           </section>
 
-          <section id="calc-btnpad" class="flex row">
-            <!-- Number Buttons -->
-            <div id="calc-left-bpad" class="flex flex-center b1">
-              <div class="btn">1</div>
-              <div class="btn">2</div>
-              <div class="btn">3</div>
-              <div class="btn">4</div>
-              <div class="btn">5</div>
-              <div class="btn">6</div>
-              <div class="btn">7</div>
-              <div class="btn">8</div>
-              <div class="btn">9</div>
-            </div>
+          <section id="calc-body">
 
-            <!-- +, -, /, * = Code -->
-            <div id="calc-right-bpad" class="flex col b2">
-              <div class="btn">/</div>
-              <div class="btn">*</div>
-              <div class="btn">+</div>
-              <div class="btn">-</div>
-              <div class="btn">=</div>
-            </div>
+            <!-- Keypad Container -->
+            <section id="calc-keypad">
+
+              <!-- Numpad Container -->
+              <section id="calc-numpad">
+                <div>
+                  <button type="button" class="btn">1</button>
+                  <button type="button" class="btn">2</button>
+                  <button type="button" class="btn">3</button>
+                  <button type="button" class="btn">4</button>
+                  <button type="button" class="btn">5</button>
+                  <button type="button" class="btn">6</button>
+                  <button type="button" class="btn">7</button>
+                  <button type="button" class="btn">8</button>
+                  <button type="button" class="btn">9</button>
+                  <button type="button" class="btn">0</button>
+                  <button type="button" class="btn" id="equal-key">=</button>
+                </div>
+              </section>
+
+              <!-- OP Pad Container -->
+              <section id="calc-op-pad">
+                <section>
+                  <button type="button" class="btn">+</button>
+                  <button type="button" class="btn">-</button>
+                  <button type="button" class="btn">/</button>
+                  <button type="button" class="btn">*</button>
+                </section>
+              </section>
+
+            </section>
           </section>
 
-          <!-- Reset Buttons -->
-          <section class="flex row">
-            <div class="btn container-fluid flex flex-center row">
-                <p>Reset</p>
-            </div>
+          <!-- Reset Buttons Container -->
+          <section id="calc-footer">
+            <section id="calc-reset-btns">
+
+              <!-- Reset Button -->
+              <div class="reset row flex-center">
+                <button type="button" class="btn">AC</button>
+              </div>
+              
+              <div class="del row flex-center">
+                <button type="button" class="btn">Del</button>
+              </div>
+            </section>
           </section>
-        </div>
+
+        </section>
       </div>
-    </section>
+    </div>
   </main>
 
-  <footer class="container-flex flex flex-center py-5">
-      <div class="container flex flex-center">
-        <h3 class="text-center">
-          <small>
-            Developed by <span>@jdcodes-12</span> on GitHub. 
-            <br>
-            <hr>
-            APSU &copy; Code Camp - June 2022 
-          </small>
-      </h3>
+  <footer class="row flex-center">
+    <div class="container row flex-center">
+      <small>
+        <p>Develped by @jdcodes-12</p>
+        <hr>
+        <p>&copy; APSU Code Camp - Jun. 22'</p>
+      </small>
     </div>
   </footer>
-
 </body>
 </html>

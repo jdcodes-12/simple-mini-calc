@@ -18,7 +18,7 @@
 
 <body>
   <header class="row flex-center">
-    <h1 class="container row flex-center">The Digit Cruncher</h1>
+    <h1 class="container row flex-center">The <span class="title">Digit</span> Cruncher</h1>
   </header>
 
   <main>
@@ -30,8 +30,9 @@
 
           <!-- Window Display -->
           <section id="calc-header" class="row flex-center">
-              <div class="container row flex-center">
-                Window 
+              <div id="output" class="container">
+                <div data-prev-op id="prev-op">123 +</div>
+                <div data-cur-op id="cur-op">456</div>
               </div>
           </section>
 
@@ -43,27 +44,28 @@
               <!-- Numpad Container -->
               <section id="calc-numpad">
                 <div>
-                  <button type="button" class="btn">1</button>
-                  <button type="button" class="btn">2</button>
-                  <button type="button" class="btn">3</button>
-                  <button type="button" class="btn">4</button>
-                  <button type="button" class="btn">5</button>
-                  <button type="button" class="btn">6</button>
-                  <button type="button" class="btn">7</button>
-                  <button type="button" class="btn">8</button>
-                  <button type="button" class="btn">9</button>
-                  <button type="button" class="btn">0</button>
-                  <button type="button" class="btn" id="equal-key">=</button>
+                  <button data-number class="btn">1</button>
+                  <button data-number class="btn">2</button>
+                  <button data-number class="btn">3</button>
+                  <button data-number class="btn">4</button>
+                  <button data-number class="btn">5</button>
+                  <button data-number class="btn">6</button>
+                  <button data-number class="btn">7</button>
+                  <button data-number class="btn">8</button>
+                  <button data-number class="btn">9</button>
+                  <button data-number class="btn">0</button>
+                  <button data-number class="btn">.</button>
+                  <button data-equals class="btn">=</button>
                 </div>
               </section>
 
               <!-- OP Pad Container -->
               <section id="calc-op-pad">
                 <section>
-                  <button type="button" class="btn">+</button>
-                  <button type="button" class="btn">-</button>
-                  <button type="button" class="btn">/</button>
-                  <button type="button" class="btn">*</button>
+                  <button data-operation class="btn">+</button>
+                  <button data-operation class="btn">-</button>
+                  <button data-operation class="btn">/</button>
+                  <button data-operation class="btn">*</button>
                 </section>
               </section>
 
@@ -76,11 +78,12 @@
 
               <!-- Reset Button -->
               <div class="reset row flex-center">
-                <button type="button" class="btn">AC</button>
+                <button data-all-clear class="btn">AC</button>
               </div>
               
+              <!-- Clear Button -->
               <div class="del row flex-center">
-                <button type="button" class="btn">Del</button>
+                <button data-delete class="btn">Del</button>
               </div>
             </section>
           </section>
@@ -99,5 +102,9 @@
       </small>
     </div>
   </footer>
+
+
+  <!-- JS Scripts -->
+  <script src="./js/index.js"></script>
 </body>
 </html>

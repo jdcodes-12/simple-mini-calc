@@ -26,6 +26,15 @@ header {
     font-size: calc(var(--base-font-size) * 2);
 }
 
+.title {
+    color: var(--primary);
+    margin: 0 20px;
+    text-decoration-color: var(--secondary);
+    text-decoration-style: wavy;
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+}
+
 footer > div {
     padding: 50px 0;
     font-size: calc(var(--base-font-size) * 1.25);
@@ -35,7 +44,13 @@ footer > div {
     background-color: var(--secondary);
     border: 1px solid var(--accent);
     color: var(--light);
-    border-radius: calc(var(--base-border-radius) * 1.5);
+    border-radius: calc(var(--base-border-radius) * 1.25);
+    font-size: 1.75rem;
+}
+
+.btn:hover {
+    background-color: var(--accent);
+    color: var(--secondary);
 }
 
 .reset .btn {
@@ -57,7 +72,7 @@ footer > div {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     background-color: var(--primary);
-    border-radius: calc(var(--base-border-radius) * 2.75);
+    border-radius: calc(var(--base-border-radius) * 4);
     font-family: var(--font-body);
     font-weight: 900;
     box-shadow: -5px 18px 50px #576F72;
@@ -68,8 +83,8 @@ footer > div {
     grid-row: 1 / 2;
     background-color: var(--secondary);
     border-top: solid 1px var(--light);
-    border-top-left-radius: calc(var(--base-border-radius) * 1);
-    border-top-right-radius: calc(var(--base-border-radius) * 1);
+    border-top-left-radius: calc(var(--base-border-radius) * 2);
+    border-top-right-radius: calc(var(--base-border-radius) * 2);
     border-bottom: 1px solid var(--accent);
     padding: 10px 0;
 }
@@ -80,6 +95,26 @@ footer > div {
     background-color: var(--gray);
     border-radius: calc(var(--base-border-radius) * 1.25);
     border: 1px solid var(--primary);
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 0 15px 0 0;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#prev-op {
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 1.25rem;
+}
+
+#cur-op {
+    color: rbga(0, 0, 0, 1);
+    font-size: 2.15rem;
 }
 
 #calc-body {

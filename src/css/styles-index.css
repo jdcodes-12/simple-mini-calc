@@ -7,8 +7,8 @@
     --gray: #ced4da;
     --bg-light: var(--light);
     --bg-dark: var(--primary);
-    --font-display: 'Play', monospace;
-    --font-body: 'Noto Sans', monospace;
+    --font-display: 'Play', monospace;   
+    --font-body: 'Noto Sans', monospace; 
     --base-font-size: 16px;
     --base-font-style: normal;
     --base-border-radius: 10px;
@@ -33,11 +33,6 @@ header {
     text-decoration-style: wavy;
     text-decoration-line: underline;
     text-decoration-thickness: 4px;
-}
-
-footer > div {
-    padding: 50px 0;
-    font-size: calc(var(--base-font-size) * 1.25);
 }
 
 .btn {
@@ -186,16 +181,8 @@ footer > div {
     grid-row: 1 / 2;
 }
 
-footer {
-    padding: 20px 0;
-    text-align: center;
-}
 
 /* --- Container Utiltiies  --- */
-.container-fluid {
-    width: 100%;
-}
-
 .container {
     width: 80%;
 }
@@ -214,17 +201,4 @@ footer {
 .flex-center {
     justify-content: center;
     align-items: center;
-}
-
-/* --- Border Utilities --- */
-.b1 {
-    border: 1px solid red;
-}
-
-.b2 {
-    border: 1px solid blue;
-}
-
-.b3 {
-    border: 1px solid limegreen;
 }
